@@ -1,0 +1,7 @@
+{
+    "extends": "@antfu",
+    "rules": {
+        "@typescript-eslint/indent": "off"
+        // "indent": "off"
+    }
+}
