@@ -18,7 +18,8 @@
     "typecheck": "npx tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "vitest"
+    "test": "vitest",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@unocss/reset": "^0.44.3",
@@ -47,7 +48,7 @@
     "vitest": "^0.18.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
