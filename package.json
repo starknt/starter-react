@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/antfu/name.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "ts",
+    "typescript"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
