@@ -48,14 +48,16 @@
     "vitest": "^0.18.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint . --fix"
+      "eslint . --fix",
+      "git add"
     ],
     "*.{json}": [
-      "eslint . --fix"
+      "eslint . --fix",
+      "git add"
     ]
   }
 }
