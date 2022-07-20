@@ -37,11 +37,24 @@
     "@vitejs/plugin-react": "^2.0.0",
     "eslint": "^8.20.0",
     "jsdom": "^20.0.0",
+    "lint-staged": "^13.0.3",
     "pnpm": "^7.5.2",
     "react-test-renderer": "^18.2.0",
+    "simple-git-hooks": "^2.8.0",
     "typescript": "^4.7.4",
     "unplugin-auto-import": "^0.9.3",
     "vite": "^3.0.2",
     "vitest": "^0.18.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint . --fix"
+    ],
+    "*.{json}": [
+      "eslint . --fix"
+    ]
   }
 }
