@@ -1,4 +1,4 @@
-export function useCount(initiValue?: number) {
+export function useCounter(initiValue?: number) {
     const [value, setValue] = useState(initiValue ?? 0)
 
     const increase = useCallback((nv?: number) => {
