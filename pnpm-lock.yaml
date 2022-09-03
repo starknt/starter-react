@@ -13,6 +13,8 @@ specifiers:
   eslint: ^8.20.0
   jsdom: ^20.0.0
   lint-staged: ^13.0.3
+  mobx: ^6.6.1
+  mobx-react-lite: ^3.4.0
   pnpm: ^7.5.2
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -26,6 +28,8 @@ specifiers:
 
 dependencies:
   '@unocss/reset': 0.44.3
+  mobx: 6.6.1
+  mobx-react-lite: 3.4.0_m26jawr67gnusmh4egzqtnhxru
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   unocss: 0.44.3_vite@3.0.2
@@ -3043,6 +3047,28 @@ packages:
       pathe: 0.3.2
       pkg-types: 0.3.3
     dev: true
+
+  /mobx-react-lite/3.4.0_m26jawr67gnusmh4egzqtnhxru:
+    resolution: {integrity: sha512-bRuZp3C0itgLKHu/VNxi66DN/XVkQG7xtoBVWxpvC5FhAqbOCP21+nPhULjnzEqd7xBMybp6KwytdUpZKEgpIQ==}
+    peerDependencies:
+      mobx: ^6.1.0
+      react: ^16.8.0 || ^17 || ^18
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      mobx: 6.6.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /mobx/6.6.1:
+    resolution: {integrity: sha512-7su3UZv5JF+ohLr2opabjbUAERfXstMY+wiBtey8yNAPoB8H187RaQXuhFjNkH8aE4iHbDWnhDFZw0+5ic4nGQ==}
+    dev: false
 
   /mrmime/1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}

@@ -23,10 +23,12 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
-    "lint-staged": "lint-staged"
+    "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
     "@unocss/reset": "^0.44.3",
+    "mobx": "^6.6.1",
+    "mobx-react-lite": "^3.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "unocss": "^0.44.3"
@@ -52,7 +54,7 @@
     "vitest": "^0.18.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

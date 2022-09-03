@@ -13,6 +13,8 @@ export default defineConfig({
     autoImport({
       imports: [
         'react',
+        'mobx',
+        'mobx-react-lite'
       ],
       dirs: [
         './src/hooks',
