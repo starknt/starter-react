@@ -1,16 +1,13 @@
-/// <reference types="vitest" />
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import unocss from 'unocss/vite'
-import autoImport from 'unplugin-auto-import/vite'
+import { defineConfig } from 'vitest/config'
+import React from '@vitejs/plugin-react-swc'
+import UnoCSS from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   plugins: [
-    react(),
-    unocss({
-      configFile: 'unocss.config.ts',
-    }),
-    autoImport({
+    React(),
+    UnoCSS(),
+    AutoImport({
       imports: [
         'react',
         'mobx',
@@ -22,7 +19,6 @@ export default defineConfig({
     }),
   ],
   test: {
-    globals: true,
     environment: 'jsdom',
   },
 })
